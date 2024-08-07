@@ -356,6 +356,149 @@ tr#ROW1  {
 <div id="program"  class="container-fluid">
   <div class="text-center">
  <h2>Program</h2>
+ <p> For more details, check out the <a href="program_extended.html"> detailed program</a>.</p>
+ <div class="text-center">
+  <h4>
+  <b>Monday 30/09/2024</b>
+  </h4>
+  </div>
+  <table id="myTable">
+  <tbody>
+  <tr>
+  <td>08:30 - 09:00</td><td>
+  <span style="color:black">Registration</span>
+  </td>
+  </tr><tr>
+  <td>09:00 - 09:30</td><td>
+  <span style="color:black">Opening</span>
+  </td>
+  </tr><tr id="ROW1">
+  <td>09:30 - 10:30</td><td>
+  <span style="color:black">Keynote I</span>
+  </td>
+  </tr>
+  <tr id="Keynote">
+  <td id="Keynote" colspan="3">
+  <p> TBD </p><br>
+  </td>
+  </tr><tr>
+  <td>10:30 - 11:00</td><td>
+  <span style="color:black">Break</span>
+  </td>
+  </tr><tr id="ROW1">
+  <td>11:00 - 12:30</td><td>
+  <span style="color:black"> <a href="program_extended.html#web"> Web Security and Privacy </a></span>
+  
+  </td>
+  </tr>
+  <tr>
+  <td>12:30 - 14:00</td><td>
+  <span style="color:black">Lunch</span>
+  </td>
+  </tr><tr>
+  <td>14:00 - 15:30</td><td>
+  <span style="color:black"> <a href="program_extended.html#mal1"> Malware & Unwanted Software (I) </a></span>
+  </td>
+  </tr>
+  <tr>
+  <td>15:30 - 16:00</td><td>
+  <span style="color:black">Break</span>
+  </td>
+  </tr><tr id="ROW1">
+  <td>16:00 - 18:00</td><td>
+  <span style="color:black"> <a href="program_extended.html#ids">  IDS and Network Security </a></span>
+  </td>
+  </tr>
+  <tr>
+  <td>18:00</td><td>
+  <span style="color:black">Welcome Reception</span>
+  </td>
+  </tr></table><div class="text-center">
+  <h4>
+  <b>Tuesday 01/10/2024</b>
+  </h4>
+  </div>
+  <table id="myTable">
+  <tbody>
+  <tr>
+  <td>09:30 - 10:30</td><td>
+  <span style="color:black"> <a href="program_extended.html#mal2"> Malware & Unwanted Software (II) </a></span>
+  </td>
+  </tr>
+  <tr>
+  <td>10:30 - 11:00</td><td>
+  <span style="color:black">Break</span>
+  </td>
+  </tr><tr id="ROW1">
+  <td>11:00 - 12:30</td><td>
+  <span style="color:black"><a href="program_extended.html#crime"> Cyber Crime and Security Measurements</a></span>
+  </td>
+  </tr>
+  <tr>
+  <td>12:30 - 14:00</td><td>
+  <span style="color:black">Lunch</span>
+  </td>
+  </tr><tr id="ROW1">
+  <td>14:00 - 15:30</td><td>
+  <span style="color:black"><a href="program_extended.html#softsec"> Software Security</a></span>
+  </td>
+  </tr>
+  <tr>
+  <td>15:30 - 16:00</td><td>
+  <span style="color:black">Break</span>
+  </td>
+  </tr><tr id="ROW1">
+  <td>16:00 - 18:00</td><td>
+  <span style="color:black"><a href="program_extended.html#ml"> ML and Adverserial Learning for Security</a></span>
+  </td>
+  </tr>
+  <tr>
+  <td>18:00</td><td>
+  <span style="color:black">Dinner Banquet</span>
+  </td>
+  </tr></table><div class="text-center">
+  <h4>
+  <b>Wednesday 02/10/2024</b>
+  </h4>
+  </div>
+  <table id="myTable">
+  <tbody>
+  <tr id="ROW1">
+  <td>09:30 - 10:30</td><td>
+  <span style="color:black">Keynote II</span>
+  </td>
+  </tr>
+  <tr id="Keynote">
+  <td id="Keynote" colspan="3">
+  <p> TBD </p><br>
+  </td>
+  </tr><tr>
+  <td>10:30 - 11:00</td><td>
+  <span style="color:black">Break</span>
+  </td>
+  </tr><tr id="ROW1">
+  <td>11:00 - 12:30</td><td>
+  <span style="color:black"><a href="program_extended.html#cps"> CPS / IoT / Critical Infrastructures Security</a></span>
+  </td>
+  </tr>
+  <tr>
+  <td>12:30 - 14:00</td><td>
+  <span style="color:black">Lunch</span>
+  </td>
+  </tr><tr id="ROW1">
+  <td>14:00 - 16:00</td><td>
+  <span style="color:black"><a href="program_extended.html#mobisec"> Mobile and Hardware Security</a></span>
+  </td>
+  </tr>
+  <tr>
+  <td>16:00 - 16:30</td><td>
+  <span style="color:black">Break</span>
+  </td>
+  </tr><tr>
+  <td>16:30</td><td>
+  <span style="color:black">Closing Remarks</span>
+  </td>
+  </tr></table>
 </div>
 </div>
  
@@ -412,32 +555,6 @@ tr#ROW1  {
         <hr />
       </div>
 
-
-<script>
-
-$(function() {
-  $("td[id = info]").find("p").hide();
-  $("table").click(function(event) {
-      event.stopPropagation();
-      var $target = $(event.target);
-
-      if ( $target.closest("td").attr("id") != "Keynote" && $target.closest("tr").next().attr("id") != "Keynote")
-      {
-        if ( $target.closest("td").attr("colspan") > 1 ) {
-            $target.closest("td").find("p").slideUp();
-        } else {
-            $target.closest("tr").next().find("p").slideToggle();
-        }
-      } else{
-        if ( $target.closest("td").attr("colspan") > 1 ) {     //click text
-              $target.closest("td").find("div").slideUp();
-        } else{
-          $target.closest("tr").next().find("div").slideToggle();
-        }
-      }
-  });
-});
-</script>
 
 </body>
 </html>
